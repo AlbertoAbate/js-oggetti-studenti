@@ -28,3 +28,19 @@ for (var i = 0; i < studente.length; i++) {
     console.log("studente " + studente[i][j]);
   }
 }
+// Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente all'array creato al punto 2 inserendo nell’ordine: nome, cognome e età.
+var nome = prompt("qual è il tuo nome?");
+var cognome = prompt("qual è il tu cognome?");
+var età = parseInt(prompt("quanti anni hai?"));
+
+var objectUser = {
+  nome,
+  cognome,
+  età
+}
+
+studente.push(objectUser);
+
+for (var i = 0; i < studente.length; i++) {
+       console.log(studente[i]);
+   }
